@@ -1,0 +1,80 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/ashes_dark.toml"
+]
+
+[font]
+size = 14
+  # Fira Code
+  # normal = { family = "Fira Code", style = "Regular" }
+  # bold = { family = "Fira Code", style = "Bold" }
+  # italic = { family = "Fira Code", style = "Italic" }
+
+  # JetBrains Mono
+   normal = { family = "JetBrains Mono", style = "Regular" }
+   bold = { family = "JetBrains Mono", style = "Bold" }
+   italic = { family = "JetBrains Mono", style = "Italic" }
+
+  # Source Code Pro
+  # normal = { family = "Source Code Pro", style = "Regular" }
+  # bold = { family = "Source Code Pro", style = "Bold" }
+  # italic = { family = "Source Code Pro", style = "Italic" }
+
+  # Inconsolata
+  # normal = { family = "Inconsolata", style = "Regular" }
+  # bold = { family = "Inconsolata", style = "Bold" }
+  # italic = { family = "Inconsolata", style = "Italic" }
+
+  # Hack
+  # normal = { family = "Hack", style = "Regular" }
+  # bold = { family = "Hack", style = "Bold" }
+  # italic = { family = "Hack", style = "Italic" }
+
+  # Ubuntu Mono
+  # normal = { family = "Ubuntu Mono", style = "Regular" }
+  # bold = { family = "Ubuntu Mono", style = "Bold" }
+  # italic = { family = "Ubuntu Mono", style = "Italic" }
+
+  # Noto Mono
+  # normal = { family = "Noto Mono", style = "Regular" }
+  # bold = { family = "Noto Mono", style = "Bold" }
+  # italic = { family = "Noto Mono", style = "Italic" }
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.8
+
+[window.padding]
+x = 6
+y = 0
+
+[window.dimensions]
+columns = 125
+lines = 30
+
+
+# Scrolling settings
+[scrolling]
+history = 10000
+multiplier = 3
+
+## key bindings
+[keyboard]
+bindings = [
+      # Font size controls
+    { key = "=", mods = "Control", action = "IncreaseFontSize" },
+    { key = "-", mods = "Control", action = "DecreaseFontSize" },
+    { key = "0", mods = "Control", action = "ResetFontSize" },
+
+    # Fullscreen toggle
+    { key = "F11", action = "ToggleFullscreen" },
+
+
+    # Scroll up/down with Alt+Arrow keys
+    { key = "Up", mods = "Alt", action = "ScrollPageUp" },
+    { key = "Down", mods = "Alt", action = "ScrollPageDown" },
+
+    # Close window
+    { key = "Q", mods = "Control|Shift", action = "Quit" }
+]
