@@ -42,7 +42,17 @@ for_window [floating] border none
 exec --no-startup-id dex --autostart --environment i3
 
 # compositor
-# exec --no-startup-id picom 
+exec --no-startup-id picom 
+
+# night light
+exec --no-startup-id redshift -O 3500K
+
+# 1.25x env vars
+exec --no-startup-id export GDK_SCALE=1
+exec --no-startup-id export GDK_DPI_SCALE=1.25
+exec --no-startup-id export QT_SCALE_FACTOR=1.25
+exec --no-startup-id export QT_AUTO_SCREEN_SCALE_FACTOR=0
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -116,7 +126,7 @@ for_window [class="Thunar"] resize set 1200 700
 for_window [class="Windscribe2"] floating enable
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale ~/.wallpapers/mafuyu19_upsc+cs.png
+exec --no-startup-id feh --bg-scale ~/.wallpapers/miku2.jpg
 
 # kill focused window
 bindsym $mod+Shift+q kill
