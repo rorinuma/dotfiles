@@ -4,7 +4,7 @@ import = [
 ]
 
 [font]
-size = 14
+size = 18
   # Fira Code
   # normal = { family = "Fira Code", style = "Regular" }
   # bold = { family = "Fira Code", style = "Bold" }
@@ -78,3 +78,6 @@ bindings = [
     # Close window
     { key = "Q", mods = "Control|Shift", action = "Quit" }
 ]
+
+[env]
+COLORTERM = "truecolor"
